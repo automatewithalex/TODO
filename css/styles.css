@@ -1,0 +1,181 @@
+/* css/styles.css */
+
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+#app-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#board-input-container {
+  text-align: center;
+  margin: 20px;
+}
+
+#new-board-input {
+  width: 300px;
+  height: 30px;
+  font-size: 1em;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#clear-data-button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  font-size: 1em;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#clear-data-button:hover {
+  background-color: #bd2130;
+}
+
+#export-data-button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  font-size: 1em;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#export-data-button:hover {
+  background-color: #218a39;
+}
+
+#import-data-button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  font-size: 1em;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#import-data-button:hover {
+  background-color: #218a39;
+}
+
+#start-timer-button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  font-size: 1em;
+  background-color: #FCB900;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#start-timer-button:hover {
+  background-color: #d39b00;
+}
+
+#restart-timer-button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  font-size: 1em;
+  background-color: #FCB900;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#restart-timer-button:hover {
+  background-color: #d39b00;
+}
+
+#boards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Input Fields */
+input[type="text"] {
+  font-family: inherit;
+  font-size: 1em;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.add-task-container {
+  margin-top: 10px;
+}
+
+.add-task-container input {
+  width: calc(100% - 10px);
+}
+
+/* Button Styles */
+button {
+  font-family: inherit;
+}
+
+/* Delete Button Styles */
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #dc3545;
+  font-size: 1.2em;
+  margin-left: 5px;
+  padding: 0;
+  line-height: 1;
+}
+
+.delete-button:hover {
+  color: #bd2130;
+}
+
+.delete-button:focus {
+  outline: none;
+}
+
+/* Copy Button Styles */
+.copy-button {
+  color: #28a745;
+}
+
+/* Dragging Styles */
+.dragging {
+  opacity: 0.5;
+}
+
+/* Timer Display */
+#timer-display {
+  font-size: 1.5em;
+  margin-top: 10px;
+  color: #dc3545;
+}
+
+#timer-container {
+  float: right;
+}

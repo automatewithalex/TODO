@@ -1,0 +1,87 @@
+/* css/task.css */
+
+/* Task List */
+.task-list {
+  list-style-type: none;
+  min-height: 200px;
+  padding: 0;
+}
+
+/* Task Item */
+.task-item {
+  background-color: #fff;
+  margin: 5px auto;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: auto;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+/* Task Content Container */
+.task-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Indent Symbol */
+.indent-symbol {
+  margin-right: 5px;
+  font-size: 1.2em;
+}
+
+/* Drag Handle Styles */
+.task-item .drag-handle {
+  cursor: move;
+  margin-right: 5px;
+  font-size: 1.2em;
+  user-select: none;
+}
+
+/* Task Item Text */
+.task-item .task-text {
+  flex-grow: 1;
+  font-size: 1em;
+  outline: none;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+/* Task Buttons Container */
+.task-buttons {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+/* Sub-task List */
+.subtask-list {
+  list-style-type: none;
+  padding-left: 0; /* Remove extra padding */
+  margin-top: 5px;
+  width: 100%; /* Ensure sub-task list takes full width */
+}
+
+/* Sub-task Item */
+.task-item.subtask-item {
+  margin-left: 0;
+  padding-left: 0; /* Remove extra padding */
+  border-left: none; /* Remove left border */
+  width: 100%; /* Ensure sub-task item takes full width */
+}
+
+/* Sub-task Content Container */
+.task-item.subtask-item .task-content {
+  align-items: center;
+}
+
+/* Indent sub-task content */
+.task-item.subtask-item .indent-symbol {
+  margin-left: 20px; /* Indent the indent symbol */
+}

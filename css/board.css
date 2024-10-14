@@ -1,0 +1,65 @@
+/* css/board.css */
+
+/* Board Container */
+.board-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Board Styles */
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  max-width: calc(100vw - 20px);
+  background-color: #fff;
+  border: 2px solid #1b2651;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.board-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.board-title {
+  font-size: 1.5em;
+  margin: 0;
+  outline: none;
+}
+
+.board-buttons {
+  position: absolute;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.board.dragging {
+  opacity: 0.5;
+}
+
+/* Add Category Button Styles */
+.add-category-button {
+  margin-top: 15px;
+  padding: 8px 12px;
+  font-size: 1em;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.add-category-button:hover {
+  background-color: #0056b3;
+}

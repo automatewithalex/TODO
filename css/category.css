@@ -1,0 +1,52 @@
+/* css/category.css */
+
+/* Category Container Styles */
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 400px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+
+/* Category Styles */
+.category {
+  background-color: #f8f9fa;
+  padding: 10px;
+  flex: 1 1 250px; /* Flex-grow, flex-shrink, flex-basis */
+  max-width: 800; /* Maximum width of 800px */
+  min-width: 250px; /* Minimum width */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+/* Category Header */
+.category-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Drag Handle */
+.drag-handle {
+  cursor: move;
+  margin-right: 5px;
+  font-size: 1.2em;
+  user-select: none;
+}
+
+/* Category Title */
+.category-header h3 {
+  font-size: 1.2em;
+  margin: 0;
+  flex-grow: 1;
+  outline: none;
+}
+
+.category-header h3:not([contenteditable="true"]) {
+  cursor: default;
+}
